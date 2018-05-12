@@ -20,6 +20,7 @@ namespace PhotoSharingApp.Model
         {
 
             List < Photo > Ph= new List<Photo>();
+            List<Comment> comment = new List<Comment>();
             Ph.Add(new Photo()
             {
                 Title = "Test Photo 1",
@@ -49,6 +50,22 @@ namespace PhotoSharingApp.Model
 
             foreach (Photo s in Ph)
                 context.Photos.Add(s);
+
+
+            Comment com = new Comment();
+            com.PhotoID = 1;
+            com.User = "NaokiSato";
+            com.Subject = "Test Comment";
+            com.Body = " This comment should appear in photo 1";
+            comment.Add(com);
+           
+            foreach (Comment c in comment)
+            {
+                context.Comments.Add(com);
+
+            }
+           
+
             context.SaveChanges();
             base.Seed(context);
         }
