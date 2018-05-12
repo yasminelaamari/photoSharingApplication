@@ -13,7 +13,7 @@ namespace PhotoSharingApp.Controllers
         public ActionResult Index()
         {
             var photo = new Photo();
-            return View();
+            return View(photo);
         }
     }
 }
