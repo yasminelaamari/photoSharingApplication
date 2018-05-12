@@ -124,6 +124,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
+    <Content Include="Photos\IMG_3497 %281%29.JPG" />
+    <Content Include="Photos\IMG_3500 %281%29.JPG" />
+    <Content Include="Photos\Sanns titre.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -165,6 +168,7 @@
     <Compile Include="Model\Comment.cs" />
     <Compile Include="Model\Photo.cs" />
     <Compile Include="Model\PhotoSharingContext.cs" />
+    <Compile Include="Model\PhotoSharingInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

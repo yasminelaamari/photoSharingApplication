@@ -38,3 +38,7 @@ C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\bin\Sy
 C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\obj\Debug\PhotoSharingApp.csprojResolveAssemblyReference.cache
 C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\obj\Debug\PhotoSharingApp.dll
 C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\obj\Debug\PhotoSharingApp.pdb
+C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\bin\EntityFramework.dll
+C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\bin\EntityFramework.xml
+C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\bin\EntityFramework.SqlServer.xml
