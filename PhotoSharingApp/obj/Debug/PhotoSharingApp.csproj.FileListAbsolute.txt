@@ -42,3 +42,6 @@ C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\bin\En
 C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\bin\EntityFramework.SqlServer.dll
 C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\bin\EntityFramework.xml
 C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\bin\Photos\IMG_3497 (1).JPG
+C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\bin\Photos\IMG_3500 (1).JPG
+C:\Users\Yasmine\Documents\GitHub\photoSharingApplication\PhotoSharingApp\bin\Photos\Sanns titre.png

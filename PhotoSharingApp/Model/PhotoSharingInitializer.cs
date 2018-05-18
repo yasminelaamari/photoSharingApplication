@@ -67,7 +67,7 @@ namespace PhotoSharingApp.Model
            
 
             context.SaveChanges();
-            base.Seed(context);
+         //   base.Seed(context);
         }
     }
 }
