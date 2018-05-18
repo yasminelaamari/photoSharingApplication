@@ -1,4 +1,5 @@
-﻿using PhotoSharingApp.Model;
+﻿using PhotoSharingApp.Controllers;
+using PhotoSharingApp.Model;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,7 +9,7 @@ using System.Web.Mvc;
 
 namespace PhotoSharingApp.Controller
 {      
-   // [ValueReporter]
+    [ValueReporter]
     public class PhotoController : System.Web.Mvc.Controller
     {
         private PhotoSharingContext context= new PhotoSharingContext();
