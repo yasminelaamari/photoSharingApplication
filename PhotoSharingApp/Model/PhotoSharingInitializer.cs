@@ -23,10 +23,10 @@ namespace PhotoSharingApp.Model
             List<Photo> photos = new List<Photo>();
 
             Photo photo = new Photo();
-            photo.Title = "Title1";
-            photo.Description = "Description1";
-            photo.Owner = "Bershka";
-            photo.PhotoFile = System.IO.File.ReadAllBytes("\\Users\\Yasmine\\Documents\\GitHub\\photoSharingApplication\\PhotoSharingApp\\Photos\\IMG_3497 (1).JPG");
+            photo.Title = "Title de la photo";
+            photo.Description = "Description ....";
+            photo.Owner = "Smisem";
+            photo.PhotoFile = System.IO.File.ReadAllBytes("\\Users\\Yasmine\\Documents\\GitHub\\photoSharingApplication\\PhotoSharingApp\\Photos\\IMG_3500 (1).JPG");
             photo.CreatedDate = DateTime.Now;
             photo.ImageMimeType = "image/jpeg";
             photos.Add(photo);

@@ -18,10 +18,9 @@ namespace PhotoSharingApp.Controller
         // GET: Photo
         public ActionResult Index()
         {
-            //var photo = new Photo(); 
+    
             return View("Index");
-            //context.Photos.First<Photo>()
-            //context.Photos.ToList()
+        
         }
 
         public ActionResult Display(int id)

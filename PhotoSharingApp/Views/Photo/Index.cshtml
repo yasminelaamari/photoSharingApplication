@@ -1,25 +1,11 @@
-﻿@model PhotoSharingApp.Model.Photo
-
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div>
-        <div style="padding-bottom:1%">
-            <h2 style="border-bottom:2px solid black;background-repeat: no-repeat;
+﻿<div>
+    <div style="padding-bottom:1%">
+        <h2 style="border-bottom:2px solid black;background-repeat: no-repeat;
     background-attachment: fixed;">
-                Gallery
-            </h2>
-        </div>
-        @Html.Action("_PhotoGallery", "Photo")
+            Gallery
+        </h2>
     </div>
-</body>
-</html>
+    @Html.Action("_PhotoGallery", "Photo")
+    @Html.ActionLink("Creer une photo", "Create")
+   
+</div>
