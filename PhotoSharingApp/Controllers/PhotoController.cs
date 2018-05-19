@@ -99,6 +99,8 @@ namespace PhotoSharingApp.Controller
                 return null;
             }
         }
+
+
         [ChildActionOnly]
         public ActionResult _PhotoGallery(int number = 0)
         {
@@ -108,8 +110,7 @@ namespace PhotoSharingApp.Controller
                 photos = context.Photos.ToList();
             }
             else
-            {
-                photos = (from p in context.Photos
+            {             photos = (from p in context.Photos
                           orderby p.CreatedDate descending
                           select p).Take(number).ToList();
             }
