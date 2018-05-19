@@ -7,6 +7,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+using System.Diagnostics;
+
 namespace PhotoSharingApp.Controller
 {      
     [ValueReporter]
@@ -27,7 +29,7 @@ namespace PhotoSharingApp.Controller
             List<Photo> photos = context.Photos.ToList();
             var verif = photos.Find(photo => photo.PhotoID == id);
             if (verif != null)
-                return View("Display",verif);
+                return View("Display", verif);
             else
                 return HttpNotFound();
         }

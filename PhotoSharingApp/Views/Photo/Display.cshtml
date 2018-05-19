@@ -1,69 +1,98 @@
 ﻿@model PhotoSharingApp.Model.Photo
 
-<div>
-    <h4>Photo</h4>
-    <hr />
-    @if (Model.PhotoFile != null)
-    {
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Display</title>
+</head>
+<body>
+    <div>
+
+        <hr />
+
+        @if (Model.PhotoFile != null)
+        {
+            <div>
+                <img width="800" src="@Url.Action("GetImage", "Photo",
+                                           new { id=Model.PhotoID })" />
+            </div>
+
+        }
+
+        <h3 style="border-bottom:2px solid #808080"><strong>Details</strong></h3>
+
+
+        <table>
+            <tr>
+                <td>
+                    <strong> @Html.DisplayNameFor(model => model.Title)</strong>
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => model.Title)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong> @Html.DisplayNameFor(model => model.PhotoFile)</strong>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.PhotoFile)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>@Html.DisplayNameFor(model => model.Description)</strong>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Description)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>@Html.DisplayNameFor(model => model.CreatedDate)</strong>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.CreatedDate)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>@Html.DisplayNameFor(model => model.Owner)</strong>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Owner)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>@Html.DisplayNameFor(model => model.ImageMimeType)</strong>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.ImageMimeType)
+                </td>
+            </tr>
+        </table>
         <div>
-            <img width="800" src="@Url.Action("GetImage", "Photo",
-                                           new { id=Model.PhotoID})" />
+
+            <h3 style="border-bottom:2px solid #808080"><strong>Comments</strong></h3>
+            @Html.Action("_CommentsList", "Comment", new { number = 2 })
+
         </div>
 
-    }
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.PhotoID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
 
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.PhotoFile)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PhotoFile)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CreatedDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CreatedDate)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Owner)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Owner)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ImageMimeType)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ImageMimeType)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.PhotoID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+    <div> 
+    </div>
+</body>
+</html>
